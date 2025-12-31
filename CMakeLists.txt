@@ -77,7 +77,7 @@ set(CMAKE_BUILD_TYPE "debug")
 
 target_link_options(${CMAKE_PROJECT_NAME} PRIVATE -Wl,--exclude-libs=ALL)
 
-target_link_libraries(${CMAKE_PROJECT_NAME}_static
+target_link_libraries(${CMAKE_PROJECT_NAME}_static PUBLIC
 
         frida-gum-arm64
         QBDIAARCH64
@@ -85,7 +85,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}_static
         android
         log)
 
-target_link_libraries(${CMAKE_PROJECT_NAME}
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
 
         frida-gum-arm64
         QBDIAARCH64

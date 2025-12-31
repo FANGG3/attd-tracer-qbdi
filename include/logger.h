@@ -8,7 +8,7 @@
 #include <android/log.h>
 
 #define LOG_TAG "FANGG3"
-#define log_priority  ANDROID_LOG_INFO//ANDROID_LOG_SILENT
+#define log_priority  ANDROID_LOG_DEBUG//ANDROID_LOG_SILENT
 
 
 #define LOGI(fmt, ...)                                                \
